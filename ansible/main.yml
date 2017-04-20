@@ -1,0 +1,6 @@
+---
+- hosts: all
+
+  tasks:
+    - apt: name=tree state=present
+      become: yes # become the sudo user
